@@ -1,0 +1,156 @@
+:root {
+    --card-background: hsl(216, 50%, 16%);
+    --dark-blue-main-background: hsl(217, 54%, 11%);
+    --p-text-color: hsl(215, 51%, 70%);
+    --eth-color: hsl(178, 100%, 50%);
+    --line: hsl(215, 32%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--dark-blue-main-background);
+    font-family: 'Outfit', sans-serif;
+}
+
+.main {
+    max-width: 21.875rem;
+    background-color: var(--card-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: .9375rem;
+    padding: 1.5625rem;
+}
+
+.title {
+
+    padding: 1.875rem 0rem 1.0625rem 0rem;
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: white;
+    cursor: pointer;
+
+}
+
+.title:hover {
+    color: var(--eth-color);
+}
+
+.description {
+    font-size: 1.125rem;
+    padding-bottom: 1.875rem;
+    color: var(--p-text-color);
+    font-weight: 300;
+}
+
+.image-card {
+    display: block;
+    max-width: 100%;
+    border-radius: .625rem;
+    cursor: pointer;
+    transition: 500ms ease;
+
+}
+
+figure:hover .image-card {
+
+    opacity: 0.5;
+}
+
+figure:hover .view {
+    opacity: 1;
+}
+
+figure {
+    position: relative;
+    background-color: var(--eth-color);
+    border-radius: .6875rem;
+}
+
+.view {
+    position: absolute;
+    top: 8.125rem;
+    left: 8.125rem;
+    opacity: 0;
+    transition: 300ms ease;
+
+}
+
+
+
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.875rem;
+}
+
+.eth {
+    color: var(--eth-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.eth-icon {
+    margin-right: .3125rem;
+}
+
+.days-left {
+    color: var(--p-text-color);
+    font-weight: 300;
+    display: flex;
+
+}
+
+.clock-icon {
+    height: 1.25rem;
+    margin-right: .625rem;
+}
+
+.line {
+    width: auto;
+    height: .0313rem;
+    background-color: var(--line);
+    border: none;
+
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: .9375rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 2.1875rem;
+    border: .0625rem solid white;
+}
+
+.creation-of {
+    color: var(--p-text-color);
+    padding-left: .9375rem;
+    font-weight: 300;
+}
+
+
+.name {
+    color: white;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: var(--eth-color);
+}
