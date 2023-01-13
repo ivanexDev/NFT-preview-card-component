@@ -24,8 +24,6 @@ body {
 .main {
     max-width: 21.875rem;
     background-color: var(--card-background);
-    display: flex;
-    flex-direction: column;
     border-radius: .9375rem;
     padding: 1.5625rem;
 }
