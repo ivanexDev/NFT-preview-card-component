@@ -4,6 +4,7 @@
     --p-text-color: hsl(215, 51%, 70%);
     --eth-color: hsl(178, 100%, 50%);
     --line: hsl(215, 32%, 27%);
+    --shadow: hsl(217, 51%, 9%);
 }
 
 * {
@@ -26,6 +27,7 @@ body {
     background-color: var(--card-background);
     border-radius: .9375rem;
     padding: 1.5625rem;
+    box-shadow: -10px 10px 16px 18px var(--shadow);
 }
 
 .title {
